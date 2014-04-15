@@ -32,6 +32,19 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'foreman'
+
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
+
+group :production do
+  gem 'unicorn'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
