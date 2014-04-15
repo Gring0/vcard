@@ -43,6 +43,8 @@ end
 
 group :production do
   gem 'unicorn'
+  gem 'sqlite3'
+  gem 'foreman'
 end
 
 # Use ActiveModel has_secure_password
